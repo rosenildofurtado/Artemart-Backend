@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  backend:
+    build: .
+    image: artemartepds/backend
+    container_name: artemart_backend
+    restart: always
+    tty: true
+    ports:
+      - '8000:8000'
+    volumes:
+      - ./:/usr/src/app
